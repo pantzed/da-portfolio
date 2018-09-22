@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+  <%- include('head'); -%>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">D.A.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="/">About <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="/experience">Experience</a>
+          <a class="nav-item nav-link" href="/projects">Projects</a>
+          <a class="nav-item nav-link" href="/contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid d-flex justify-content-center">
+      <div class="col-xs-12 col-md-11 mb-5">
+        <div class="row mt-5 d-flex justify-content-center">
+          <div class="col-xs-12 col-md-6 pb-2 text-center border-bottom">
+              <h1>Dastan Aitzhanov</h1>
+              <span>Data Scientist</span>
+          </div>
+        </div>
+        <div class="row mt-4 d-flex justify-content-center">
+          <div class="col-10 mt-4 text-center">
+            <p>
+                I’m a Data-Scientist with a 15+ year background in financial services and real estate sectors. 
+                My career has included quantitative investment research, management consulting, 
+                and entrepreneurship at start-ups, as well as Fortune 50 companies.
+            </p>
+            <p>
+                Solving business problems has been a cornerstone of my career. Not only do I love finding 
+                the solutions, but also effectively communicating and leading the organization to change. As a 
+                result, I’ve been able to take on various assignments internationally as a senior executive with 
+                a foreign private equity firm and even start my own business in Austin in 2013.
+            </p>
+            <p>
+                Running my own gig as an entrepreneur has been extremely fulfilling, personally and professionally. 
+                After ending this venture in June of 2017, I chose to persue pursue a career in data science 
+                becasue it expands upon my knowledge of quantative research and complements my experience as a consultant.
+                After completeing the Data Scientist program at Galvanize, Inc. I'm now ready to enter the job market 
+                and apply my analytical talents at companies focused on solving problems using data and inference.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+          <div class="col-12 text-center">
+            <a href="/experience" class="btn btn-outline-secondary">Experience<i class="fas fa-arrow-right pl-3"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <%- include('bootscripts'); -%>
 </html>
