@@ -4,12 +4,12 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const indexRouter = require('./routes');
+const indexRouter = require('./routes/index');
 const experienceRouter = require('./routes/expereince');
 const projectsRouter = require('./routes/projects');
 const contactRouter = require('./routes/contact');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 const app = express();
 
