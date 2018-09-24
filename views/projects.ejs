@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <%- include('_head'); -%>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="/">Dastan Aitzhanov</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/">About</a>
+          <a class="nav-item nav-link" href="/experience">Experience</a>
+          <a class="nav-item nav-link active" href="/projects">Projects <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="/contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid d-flex justify-content-center">
+      <div class="col-xs-12 col-md-11 mb-5">
+        <div class="row mt-5 d-flex justify-content-center">
+          <div class="col-xs-12 col-md-6 pb-2 text-center border-bottom">
+            <h1>Projects</h1>
+            <span><a href="https://github.com/dast1"><i class="fab fa-github-square pr-2"></i>Github</a></span>
+          </div>
+        </div>
+        <div class="row mt-4 d-flex justify-content-center">
+          <div class="col-11 mt-4">
+            <div id="accordion">
+              <div class="card mb-2">
+                <div class="card-header d-flex justify-content-between align-items-center" id="headingOne">
+                  <span class="accordion-title m-0 p-0">Dr. Fraud</span>
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span><i id="collapse-icon" class="far fa-minus-square"></i></span>
+                  </button>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="pb-3 d-flex flex-direction-row justify-content-between align-items-baseline">
+                      <h5>Detecting Healthcare Fraud Using Machine Learning</h5>
+                      <span><a href="https://github.com/dast1/healthcare-fraud"><i class="fas fa-code-branch fa-2x"></i></a></span>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <img class="img-fluid mb-3 rounded shadow-sm" src="./images/dr-fraud-pills.jpeg" alt="Pills spilling from a glass." />
+                        <span class="btn btn-outline-success btn-sm mt-2 mr-1">Python</span>
+                        <span class="btn btn-outline-success btn-sm mt-2 mr-1">AWS</span>
+                        <span class="btn btn-outline-success btn-sm mt-2 mr-1">NumPy</span>
+                        <span class="btn btn-outline-success btn-sm mt-2 mr-1">Pandas</span>
+                        <span class="btn btn-outline-success btn-sm mt-2 mr-1">Matplotlib</span>
+                        <span class="btn btn-outline-success btn-sm mt-2 mr-1">Jupyter</span>
+                        <span class="btn btn-outline-success btn-sm mt-2 mr-1">scikitsLearn</span>
+                      </div>
+                      <div class="col-8">
+                        <h6>Background & Motivation</h6>
+                        <p>
+                          The Institute of Medicine estimated that 30 percent of U.S. health spending (public and private) in 
+                          2009 — roughly $750 billion — was wasted on unnecessary services, excessive administrative costs, fraud, 
+                          and other problems. And according to the 2016 Ernst and Young audit report of the US Department of Health 
+                          and Human Services, HHS did not achieve an improper payment rate of less than 10 percent for the Medicare 
+                          Fee-for-Service and Medicaid programs. (sources: Management Issue 5 and 2016 FY Audit Report).
+                        </p>
+                        <p>
+                          The primary motivation of this project is to explore the viability of using Machine Learning and Artificial 
+                          Intelligence to detect potential fraud using publicly available data sources.
+                        </p>
+                        <p>
+                          <a href="https://github.com/dast1/healthcare-fraud">Read More</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+          <div class="col-12 text-center">
+            <a href="/contact" class="btn btn-outline-secondary">Contact<i class="fas fa-arrow-right pl-3"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <%- include('_bootscripts'); -%>
+  <script src="./javascripts/icon-toggle.js"></script>
+</html>

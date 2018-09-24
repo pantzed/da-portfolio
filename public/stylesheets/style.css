@@ -1,0 +1,9 @@
+body {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.accordion-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
