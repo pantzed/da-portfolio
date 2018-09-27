@@ -7,3 +7,7 @@ body {
   font-weight: bold;
   font-size: 1.25rem;
 }
+
+.bg-cobalt {
+  background-color: #213d69;
+}
